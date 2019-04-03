@@ -67,6 +67,7 @@ public class Program2 {
     }
 
     public int constructPrunedGraph(int[][] image){
+    	constructIntensityGraph(image);
     	int numedges = 0;
     	PriorityQueue<edge> nextup = new PriorityQueue<edge>();
     	PriorityQueue<vertex> available = new PriorityQueue<vertex>();
